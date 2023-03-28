@@ -27,10 +27,10 @@ class Program
 
         Vector2 c_center = Line2.Intersection(l1,l2);
 
-        Console.WriteLine(c_center.x);
-        Console.WriteLine(c_center.y);
-        
+        Console.WriteLine("{0}",Math.Round(c_center.x,5));
+        Console.WriteLine("{0}",Math.Round(c_center.y,5));
+
         double radius = Math.Sqrt(((v_p1.x-c_center.x)*(v_p1.x-c_center.x))+((v_p1.y-c_center.y)*(v_p1.y-c_center.y)));
-        Console.WriteLine(radius);
+        Console.WriteLine("{0}",Math.Round(radius,5));
     }
 }
